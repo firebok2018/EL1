@@ -73,18 +73,20 @@ public class validardni extends JFrame implements ActionListener {
 		
 		
 		try {
+			int dniN=Integer.parseInt(txtDni.getText());
+				
+			System.out.println("NNNumero");
+				
 			String dni = txtDni.getText();
-			
 			if(dni.length()==8){
-				System.out.println("correcto");
+				System.out.println("format Valid");
+			}else{
+				System.out.println("not ");
 			}
-			else{
-				System.out.println("incorecto");
-			}
-			JOptionPane.showMessageDialog(null, "correcto");
+				
 		} catch (NumberFormatException e) {
-			// TODO: handle exception
-			JOptionPane.showMessageDialog(null, "Formato incorrecto");
+		// TODO: handle exception
+			System.out.println("No es numero");
 		}
 	}
 	
