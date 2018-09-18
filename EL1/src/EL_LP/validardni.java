@@ -73,9 +73,9 @@ public class validardni extends JFrame implements ActionListener {
 		
 		
 		try {
-			int dni= Integer.parseInt(txtDni.getText());
+			String dni = txtDni.getText();
 			
-			if(dni>9 && dni<7){
+			if(dni.length()==8){
 				System.out.println("correcto");
 			}
 			else{
